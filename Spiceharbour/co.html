@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spices</title>
+    <link rel="stylesheet" href="styl.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add this CSS style to hide the card content initially */
+        .card-content-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">SPICES</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#product">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <button type="button" class="btn p-2 my-lg-0 my-2" onclick="window.location.href='signin.html'">Sign In</button>
+        </div>
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Home Section -->
+<section id="home">
+    <h1 class="text-center">ORGANIC SPICES</h1>
+    <p>Variety's the very spice of life. That gives it all its flavor.</p>
+    <div class="input-group m-4">
+        <input type="text" class="form-control" placeholder="Email Address">
+        <button class="btn signin">Get Started</button>
+    </div>
+</section>
+<!-- Home Section -->
+
+<!-- About Section -->
+<section id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 my-2">
+                <img src="org.webp" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-2 my-5">
+                <h1>ABOUT US</h1>
+                <p>Welcome to Organic Spices, your source for high-quality, organically grown spices.
+                    We are passionate about delivering the finest spices that not only enhance the flavor of your dishes
+                    but also contribute to a healthier lifestyle.Our commitment to organic farming practices ensures that our
+                    spices are free from synthetic pesticides, herbicides, and other harmful chemicals. We believe in the
+                    power of nature to provide rich, aromatic, and flavorful spices that are not only good for you but also
+                    for the planet.At Organic Spices, we work directly with farmers who share our dedication to sustainable
+                    and ethical farming. By supporting us, you are supporting local communities and promoting
+                    environmentally conscious agriculture.Explore our selection of organic spices, carefully curated to
+                    meet the diverse needs of home cooks and chefs alike. We invite you to join us on this journey of
+                    flavor, health, and sustainability.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+<!-- Product Section -->
+<section id="product">
+    <div class="container m-5">
+        <h1 class="text-center my-5">OUR PRODUCTS</h1>
+        <div class="row">
+            <!-- Product Cards (You can customize this part with your product details) -->
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="tum.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Turmeric-$2</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: High-quality turmeric for your culinary needs.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ... (similar changes for other cards) ... -->
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="chilli.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Red Chilli Powder-$2</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: Intense and flavorful red chili powder to add a kick to your dishes.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="garam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Garam Masala-$3</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: A blend of aromatic spices, Garam Masala adds depth and warmth to your culinary creations.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="pep.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pepper Powder-$5</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: Finely ground pepper powder, perfect for seasoning and enhancing the taste of your meals.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="cumin.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cumin Powder-$2</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: Ground cumin powder with a distinctive nutty flavor, ideal for various cuisines.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="fen.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fennel Powder-$6</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: Fennel powder, known for its sweet and licorice-like taste, a delightful addition to your recipes.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="mint.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mint Powder-$4</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: Refreshing mint powder to impart a cool and minty flavor to your dishes.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="card.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cardamom Powder-$7</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: Aromatic cardamom powder, perfect for both sweet and savory culinary delights.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" onclick="toggleCardContent(this)">
+                    <img src="gar.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Garlic Powder-$3</h5>
+                        <a href="#" class="btn signin">Add To Cart</a>
+                        <p class="card-content card-content-hidden">Description: Garlic powder for a convenient way to add the rich taste of garlic to your cooking.
+                            Weight: 100g</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product Section -->
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container box">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="s.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h1>CONTACT US</h1>
+                <form class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                    <input type="email" class="form-control" placeholder="Enter your mail">
+                    <textarea class="form-control" placeholder="Enter your message"></textarea>
+                    <button class="btn signin">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<!-- Footer -->
+<footer>Copyrights @spices</footer>
+
+
+<!-- End Clock Widget -->
+<!-- JavaScript to toggle card content -->
+<script>
+    function toggleCardContent(card) {
+        var cardContent = card.querySelector('.card-content');
+        if (cardContent) {
+            cardContent.classList.toggle('card-content-hidden');
+        }
+    }
+</script>
+<!-- Bootstrap JavaScript (optional, but needed for certain features) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
